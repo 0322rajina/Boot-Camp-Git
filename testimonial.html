@@ -5,24 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonail</title>
     <style>
-
-
-
 h1{
     text-align: center;
     color: rgb(14, 16, 16);
 }
-body{
-    background-color: rgb(109, 168, 147);
+p{
+  text-align: center;
+  color:rgb(61, 52, 70)
+}
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(158, 178, 191);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgb(174, 219, 246);
+      padding: 15px 40px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #ddd;
+      padding: 5px 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+    .testimonial-box {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonial-box h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.footer-content {
+  background-color: rgb(171, 171, 230);
+  padding:10px;
 }
     </style>
   </head>
   <body>
-    <h1>Testimonail</h1>
-    <p>
-      “This coding bootcamp transformed my skills in just 8 weeks! The
-      instructors were supportive, and the hands-on projects gave me the
-      confidence to apply for real tech jobs.”
-    </p>
+   <header class="header">
+    <div class="logo">Navigation</div>
+    <nav>
+      <ul>
+        <li><a href="body.html">Nav1</a></li>
+        <li><a href="testimonial.html">Nav2</a></li>
+        <li><a href="contactForm.html">Nav3</a></li>
+      </ul>
+    </nav>
+  </header>
+   
+  <main class="container">
+    <h1>What Our Participants Say</h1>
+    
+    <div class="testimonial-box">
+      <p>"This bootcamp helped me understand Git commands and GitHub collaboration clearly!"</p>
+      <h4>- Rajina Gurung</h4>
+    </div>
+
+    <div class="testimonial-box">
+      <p>"Before this session, I was scared of Git. Now I feel confident using branches and commits!"</p>
+      <h4>- Anish Thapa</h4>
+    </div>
+
+    <div class="testimonial-box">
+      <p>"The hands-on activities and team projects made learning fun and practical."</p>
+      <h4>- Sita Maharjan</h4>
+    </div>
+  </main>
+   <footer class="footer-content"> 
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+  </footer>
   </body>
 </html>
